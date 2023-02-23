@@ -1,6 +1,5 @@
 {
   "name": "restaurantfinder",
-  "name": "restaurantfinder",
   "version": "1.0.0",
   "description": "Creating a restaurant finding app using Node.js, Express, Mongoose, and EJS",
   "main": "server.js",
@@ -17,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/benjaminstratton/restaurantFinder/issues"
   },
-  "homepage": "https://github.com/benjaminstratton/recipeBook#readme"
+  "homepage": "https://github.com/benjaminstratton/restaurantFinder#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.10.0"
+  }
 }
