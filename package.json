@@ -1,7 +1,7 @@
 {
-  "name": "recipebook",
+  "name": "restaurantfinder",
   "version": "1.0.0",
-  "description": "Creating a recipe book using express, mongoose, and ejs",
+  "description": "Creating a recipe book using Node.js, Express, Mongoose, and EJS",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benjaminstratton/recipeBook.git"
+    "url": "git+https://github.com/benjaminstratton/restaurantFinder.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/benjaminstratton/recipeBook/issues"
+    "url": "https://github.com/benjaminstratton/restaurantFinder/issues"
   },
-  "homepage": "https://github.com/benjaminstratton/recipeBook#readme"
+  "homepage": "https://github.com/benjaminstratton/restaurantFinder#readme"
 }
