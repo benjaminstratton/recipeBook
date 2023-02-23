@@ -1,2 +1,2 @@
 # recipeBook
-Creating a recipe book using express, mongoose, and ejs
+Creating a recipe book using Node.js, Express, Mongoose, and EJS
