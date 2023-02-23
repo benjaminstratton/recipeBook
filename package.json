@@ -1,7 +1,7 @@
 {
   "name": "restaurantfinder",
   "version": "1.0.0",
-  "description": "Creating a recipe book using Node.js, Express, Mongoose, and EJS",
+  "description": "Creating a restaurant finding app using Node.js, Express, Mongoose, and EJS",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
