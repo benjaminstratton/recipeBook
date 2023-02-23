@@ -1,5 +1,19 @@
 module.exports = (
     {
-        name: `Placeholder`,
+        location: `New York`,
+        restaurant: [
+            {
+                name: `NY`,
+
+            }
+        ]
+    },
+    {
+        location: `LA`,
+        restaurants: [
+            {
+                name: `asdf`
+            }
+        ]
     }
 )
