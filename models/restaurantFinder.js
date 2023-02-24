@@ -1,6 +1,9 @@
 module.exports = [
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> main
     {
         city: 'Paris',
         name: "Septime",
@@ -434,5 +437,8 @@ module.exports = [
         ],
         rating: 4.2
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 ]
