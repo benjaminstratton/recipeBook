@@ -4,12 +4,18 @@ const Restaurant = require(`../models/restaurantSchema.js`)
 
 // INDEX
 router.get(`/`, (req, res) => {
-    res.send(`Index`)
+    Restaurant.find({ city: 'Paris' }, (err, data) => {
+        if (err) {
+            console.log(err)
+        }
+        res.render('city.ejs', { city: data })
+    })
+
 })
 
 // NEW
 router.get(`/new`, (req, res) => {
-    res.send(`New`)
+    res.render(`addNewRestaurant.ejs`)
 })
 
 // CREATE
@@ -19,7 +25,13 @@ router.post(`/`, (req, res) => {
 
 // SHOW
 router.get(`/:id`, (req, res) => {
-    res.send(`Show`)
+    Restaurant.findById(req.params.id, (err, data) => {
+        if (err) {
+            console.log(err)
+        }
+        res.render(`restaurant.ejs`, { restaurant: data })
+    })
+
 })
 
 // EDIT
