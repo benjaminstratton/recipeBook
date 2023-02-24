@@ -1,4 +1,4 @@
-module.exports = (
+module.exports = [
 
 
     {
@@ -435,4 +435,4 @@ module.exports = (
         rating: 4.2
     }
 
-)
+]
