@@ -1,6 +1,4 @@
-module.exports = (
-
-
+module.exports = [
     {
         city: 'Paris',
         name: "Septime",
@@ -434,5 +432,4 @@ module.exports = (
         ],
         rating: 4.2
     }
-
-)
+]
