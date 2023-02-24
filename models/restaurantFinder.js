@@ -1,4 +1,6 @@
 module.exports = (
+
+
     {
         city: 'Paris',
         name: "Septime",
@@ -189,7 +191,10 @@ module.exports = (
         type: ['Steak House'],
         rating: 4.5
     },
+
+
     {
+
         city: `Sydney`,
         name: `Aria Restaurant Sydney`,
         address: `1 Macquire St, Sydney NSW 2000, Australia`,
@@ -353,79 +358,81 @@ module.exports = (
 
 
         city: `Dubai`,
-        restaurants: [
-            {
-                name: `Miss Tess`,
-                address: `Taj Dubai - Burj Khalifa St - Business Bay - Dubai - United Arab Emirates`,
-                website: `https://www.misstessdubai.com/`,
-                description: `Asian Street Food, daily shows, and delicious cocktails! Miss Tess is an Asian street-food restaurant inspired by a story.`,
-                img: `https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/12/XumtkjIw-Miss-Tess-1200x800.jpg`,
-                type: [
-                    `Asian street-food`,
-                    `Experience`
-                ],
-                rating: 4.3
-            },
-            {
-                name: `Günaydin`,
-                address: `Souk Al Bahar - Downtown Dubai - Dubai - United Arab Emirates`,
-                website: `https://www.gunaydindubai.com/`,
-                description: `Set in the beautiful Souk Al Bahar development, Günaydin Meatery Dubai sits on the waterfront promenade, enchanting guests with a spectacular views of the world-famous Dubai Fountain and the Burj Khalifa.`,
-                img: `https://b.zmtcdn.com/data/pictures/3/18410863/2cdabe1ef0826c86888d90156bd6d502.jpg`,
-                type: [
-                    `Turkish Restaurant`,
-                    `High quality meats`
-                ],
-                rating: 4.2
-            },
-            {
-                name: `Tribes Dubai Mall`,
-                address: `Level 2, Star Atrium, above apple store, The Dubai Mall - Dubai - United Arab Emirates`,
-                website: `https://www.tribesrestaurant.com/`,
-                description: `Traditional & fusion dishes from African countries highlighted in a stylish venue with a terrace.`,
-                img: `https://www.ramadigroup.com/wp-content/uploads/75efabd8a2075f0cbf30e5f2ff052bc9.jpg`,
-                type: [
-                    `African Restaurant`,
-                    `Fushion`
-                ],
-                rating: 4.5
-            },
-            {
-                name: `Tulum Restaurant`,
-                address: `The Dubai Mall Unit No. 4F - 04, Fashion Avenue Extention - Dubai - United Arab Emirates`,
-                website: `https://tulum.ae/`,
-                description: `Classic Mexican cooking with a twist is served at this elevated eatery that has stylish decor.`,
-                img: `https://media-cdn.tripadvisor.com/media/photo-s/19/c6/23/8e/caption.jpg`,
-                type: [
-                    `Mexican Restaurant`,
-                    `Experience`
-                ],
-                rating: 4.2
-            },
-            {
-                name: `Armani/Ristorante`,
-                address: `Burj Khalifa - Lobby Level, Armani Hotel Dubai - Sheikh Mohammed bin Rashid Blvd - Downtown Dubai - Dubai - United Arab Emirates`,
-                website: `https://www.armanihotels.com/en/restaurant/armani-ristorante/?hotel=armani-hotel-dubai`,
-                description: `Contemporary Italian restaurant in hotel with chic decor, a bar, tasting menu and city views.`,
-                img: `https://resizer.otstatic.com/v2/photos/xlarge/1/24885358.jpg`,
-                type: [
-                    `Italian Restaurant`,
-                    `Contemporary`
-                ],
-                rating: 4.4
-            },
-            {
-                name: `11 Woodfire`,
-                address: `Villa 11 75B St - Jumeirah - Jumeirah 1 - Dubai - United Arab Emirates`,
-                website: `https://11woodfire.com/?utm_source=GoogleBusinessProfiles&utm_medium=Website&utm_campaign=MapLabs`,
-                description: `Produce and ingredients that are carefully selected globally and locally from premium and responsible vendors.`,
-                img: `https://www.timeoutdubai.com/cloud/timeoutdubai/2022/08/11/11-Woodfire-1024x768.jpg`,
-                type: [
-                    `Fine dining`,
-                    `Steakhouse`
-                ],
-                rating: 4.2
-            }
-        ]
+        name: `Miss Tess`,
+        address: `Taj Dubai - Burj Khalifa St - Business Bay - Dubai - United Arab Emirates`,
+        website: `https://www.misstessdubai.com/`,
+        description: `Asian Street Food, daily shows, and delicious cocktails! Miss Tess is an Asian street-food restaurant inspired by a story.`,
+        img: `https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/12/XumtkjIw-Miss-Tess-1200x800.jpg`,
+        type: [
+            `Asian street-food`,
+            `Experience`
+        ],
+        rating: 4.3
+    },
+    {
+        city: `Dubai`,
+        name: `Günaydin`,
+        address: `Souk Al Bahar - Downtown Dubai - Dubai - United Arab Emirates`,
+        website: `https://www.gunaydindubai.com/`,
+        description: `Set in the beautiful Souk Al Bahar development, Günaydin Meatery Dubai sits on the waterfront promenade, enchanting guests with a spectacular views of the world-famous Dubai Fountain and the Burj Khalifa.`,
+        img: `https://b.zmtcdn.com/data/pictures/3/18410863/2cdabe1ef0826c86888d90156bd6d502.jpg`,
+        type: [
+            `Turkish Restaurant`,
+            `High quality meats`
+        ],
+        rating: 4.2
+    },
+    {
+        city: `Dubai`,
+        name: `Tribes Dubai Mall`,
+        address: `Level 2, Star Atrium, above apple store, The Dubai Mall - Dubai - United Arab Emirates`,
+        website: `https://www.tribesrestaurant.com/`,
+        description: `Traditional & fusion dishes from African countries highlighted in a stylish venue with a terrace.`,
+        img: `https://www.ramadigroup.com/wp-content/uploads/75efabd8a2075f0cbf30e5f2ff052bc9.jpg`,
+        type: [
+            `African Restaurant`,
+            `Fushion`
+        ],
+        rating: 4.5
+    },
+    {
+        city: `Dubai`,
+        name: `Tulum Restaurant`,
+        address: `The Dubai Mall Unit No. 4F - 04, Fashion Avenue Extention - Dubai - United Arab Emirates`,
+        website: `https://tulum.ae/`,
+        description: `Classic Mexican cooking with a twist is served at this elevated eatery that has stylish decor.`,
+        img: `https://media-cdn.tripadvisor.com/media/photo-s/19/c6/23/8e/caption.jpg`,
+        type: [
+            `Mexican Restaurant`,
+            `Experience`
+        ],
+        rating: 4.2
+    },
+    {
+        city: `Dubai`,
+        name: `Armani/Ristorante`,
+        address: `Burj Khalifa - Lobby Level, Armani Hotel Dubai - Sheikh Mohammed bin Rashid Blvd - Downtown Dubai - Dubai - United Arab Emirates`,
+        website: `https://www.armanihotels.com/en/restaurant/armani-ristorante/?hotel=armani-hotel-dubai`,
+        description: `Contemporary Italian restaurant in hotel with chic decor, a bar, tasting menu and city views.`,
+        img: `https://resizer.otstatic.com/v2/photos/xlarge/1/24885358.jpg`,
+        type: [
+            `Italian Restaurant`,
+            `Contemporary`
+        ],
+        rating: 4.4
+    },
+    {
+        city: `Dubai`,
+        name: `11 Woodfire`,
+        address: `Villa 11 75B St - Jumeirah - Jumeirah 1 - Dubai - United Arab Emirates`,
+        website: `https://11woodfire.com/?utm_source=GoogleBusinessProfiles&utm_medium=Website&utm_campaign=MapLabs`,
+        description: `Produce and ingredients that are carefully selected globally and locally from premium and responsible vendors.`,
+        img: `https://www.timeoutdubai.com/cloud/timeoutdubai/2022/08/11/11-Woodfire-1024x768.jpg`,
+        type: [
+            `Fine dining`,
+            `Steakhouse`
+        ],
+        rating: 4.2
     }
+
 )
