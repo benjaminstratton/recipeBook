@@ -14,7 +14,7 @@ const restaurantFinderController = require(`./controllers/restaurantFinder.js`)
 const sydneyController = require(`./controllers/sydney.js`)
 
 // Middleware
-app.use(express.urlencoded({extended:true}))
+app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride(`_method`))
 app.use(express.static('public'))
 
@@ -28,7 +28,7 @@ app.use('/restaurantfinder', restaurantFinderController)
 app.use('/restaurantfinder/sydney', sydneyController)
 
 mongoose.connect(process.env.MONGODB, () => {
-    console.log('The connection with mongod is established');
+    console.log('The connection with mongodb is established');
 })
 
 app.listen(3000, () => {
