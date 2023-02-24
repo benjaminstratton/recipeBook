@@ -6,6 +6,9 @@ const seedData = require(`../models/restaurantFinder.js`)
 // SEED
 router.get('/seed', (req, res) => {
     Restaurant.create(seedData, (err, seededData) => {
+        if (err) {
+            console.log(err)
+        }
         res.send(seededData)
     })
 })

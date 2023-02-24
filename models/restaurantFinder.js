@@ -1,4 +1,4 @@
-module.exports = (
+module.exports = ([
     {
         city: 'Paris',
         restaurants: [
@@ -176,82 +176,83 @@ module.exports = (
             }
         ]
     },
+    {   
+        city: `Sydney`,
+        name: `Aria Restaurant Sydney`,
+        address: `1 Macquire St, Sydney NSW 2000, Australia`,
+        website: `https://www.ariasydney.com.au/`,
+        description: `Chef Matt Moran presents Modern Australian haute cuisine in an elegant, glass-walled dining room.`,
+        img: `https://media-cdn.tripadvisor.com/media/photo-s/18/01/b6/1c/aria-sydney.jpg`,
+        type: [
+            `Fine dining`,
+            `Modern Australian haute cuisine`
+        ],
+        rating: 4.5
+    },
     {
         city: `Sydney`,
-        restaurants: [
-            {
-                name: `Aria Restaurant Sydney`,
-                address: `1 Macquire St, Sydney NSW 2000, Australia`,
-                website: `https://www.ariasydney.com.au/`,
-                description: `Chef Matt Moran presents Modern Australian haute cuisine in an elegant, glass-walled dining room.`,
-                img: `https://media-cdn.tripadvisor.com/media/photo-s/18/01/b6/1c/aria-sydney.jpg`,
-                type: [
-                    `Fine dining`,
-                    `Modern Australian haute cuisine`
-                ],
-                rating: 4.5
-            },
-            {
-                name: `Restaurant Hubert`,
-                address: `15 Bligh St, Sydney NSW 2000, Australia`,
-                website: `https://www.swillhouse.com/`,
-                description: `Classic French dishes showcased in a sophisticated venue featuring a lively bar & vintage decor.`,
-                img: `https://media.cntraveler.com/photos/59c946a67448196e0e771a95/16:9/w_2560,c_limit/cr-hubert.jpg`,
-                type: [
-                    `French Restaurant`,
-                    `Vintage`
-                ],
-                rating: 4.6
-            },
-            {
-                name: `Long Chim Sydney`,
-                address: `Corner of Pitt St and Angel Place, Angel Pl, Sydney NSW 2000, Australia`,
-                website: `https://www.longchimsydney.com/`,
-                description: `Hip eatery in an industrial space serving Thai classics including curries, stir fries & meat dishes.`,
-                img: `https://images.squarespace-cdn.com/content/v1/5ed465331aadaa1625c491f7/1591177799066-V4BWSQA1B036PXSMEKNP/long+chim+interior.jpg?format=2500w`,
-                type: [
-                    `Thai Restaurant`,
-                    `Hip`
-                ],
-                rating: 4.1
-            },
-            {
-                name: `Chophouse Sydney`,
-                address: `25 Bligh St, Sydney NSW 2000, Australia`,
-                website: `https://www.chophousesydney.com.au/`,
-                description: `A high-end, contemporary steakhouse dishing up premium meats in a warmly lit vintage space.`,
-                img: `https://youimg1.tripcdn.com/target/100c0f0000007ddn49416.jpg`,
-                type: [
-                    `Steakhouse`,
-                    `Vintage`
-                ],
-                rating: 4.3
-            },
-            {
-                name: `Bistro Papillon`,
-                address: `98 Clarence St, Sydney NSW 2000, Australia`,
-                website: `https://www.bistropapillon.com.au/`,
-                description: `Onion soup, coq au vin and other French dishes in a cosy, romantic space decorated with old posters.`,
-                img: `https://i0.wp.com/www.bistropapillon.com.au/wp-content/uploads/2020/05/PrivateParty__0005_A42I2569.jpg?resize=1000%2C667&ssl=1`,
-                type: [
-                    `French Restaurant`,
-                    `Romantic`
-                ],
-                rating: 4.5
-            },
-            {
-                name: `NOMAD Sydney`,
-                address: `16 Foster St, Surry Hills NSW 2010, Australia`,
-                website: `https://nomad.sydney/`,
-                description: `Upbeat restaurant in a converted warehouse serving contemporary cuisine with Middle Eastern accents.`,
-                img: `https://media.timeout.com/images/105917669/750/422/image.jpg`,
-                type: [
-                    `Australian Restaurant`,
-                    `Converted Warehouse`
-                ],
-                rating: 4.6
-            }
-        ]
+        name: `Restaurant Hubert`,
+        address: `15 Bligh St, Sydney NSW 2000, Australia`,
+        website: `https://www.swillhouse.com/`,
+        description: `Classic French dishes showcased in a sophisticated venue featuring a lively bar & vintage decor.`,
+        img: `https://media.cntraveler.com/photos/59c946a67448196e0e771a95/16:9/w_2560,c_limit/cr-hubert.jpg`,
+        type: [
+            `French Restaurant`,
+            `Vintage`
+        ],
+        rating: 4.6
+    },
+    {
+        city: `Sydney`,
+        name: `Long Chim Sydney`,
+        address: `Corner of Pitt St and Angel Place, Angel Pl, Sydney NSW 2000, Australia`,
+        website: `https://www.longchimsydney.com/`,
+        description: `Hip eatery in an industrial space serving Thai classics including curries, stir fries & meat dishes.`,
+        img: `https://images.squarespace-cdn.com/content/v1/5ed465331aadaa1625c491f7/1591177799066-V4BWSQA1B036PXSMEKNP/long+chim+interior.jpg?format=2500w`,
+        type: [
+            `Thai Restaurant`,
+            `Hip`
+        ],
+        rating: 4.1
+    },
+    {
+        city: `Sydney`,
+        name: `Chophouse Sydney`,
+        address: `25 Bligh St, Sydney NSW 2000, Australia`,
+        website: `https://www.chophousesydney.com.au/`,
+        description: `A high-end, contemporary steakhouse dishing up premium meats in a warmly lit vintage space.`,
+        img: `https://youimg1.tripcdn.com/target/100c0f0000007ddn49416.jpg`,
+        type: [
+            `Steakhouse`,
+            `Vintage`
+        ],
+        rating: 4.3
+    },
+    {
+        city: `Sydney`,
+        name: `Bistro Papillon`,
+        address: `98 Clarence St, Sydney NSW 2000, Australia`,
+        website: `https://www.bistropapillon.com.au/`,
+        description: `Onion soup, coq au vin and other French dishes in a cosy, romantic space decorated with old posters.`,
+        img: `https://i0.wp.com/www.bistropapillon.com.au/wp-content/uploads/2020/05/PrivateParty__0005_A42I2569.jpg?resize=1000%2C667&ssl=1`,
+        type: [
+            `French Restaurant`,
+            `Romantic`
+        ],
+        rating: 4.5
+    },
+    {
+        city: `Sydney`,
+        name: `NOMAD Sydney`,
+        address: `16 Foster St, Surry Hills NSW 2010, Australia`,
+        website: `https://nomad.sydney/`,
+        description: `Upbeat restaurant in a converted warehouse serving contemporary cuisine with Middle Eastern accents.`,
+        img: `https://media.timeout.com/images/105917669/750/422/image.jpg`,
+        type: [
+            `Australian Restaurant`,
+            `Converted Warehouse`
+        ],
+        rating: 4.6
     },
     {
         city: `London`,
@@ -407,4 +408,4 @@ module.exports = (
             }
         ]
     }
-)
+])
