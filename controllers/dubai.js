@@ -8,7 +8,7 @@ router.get(`/`, (req, res) => {
         if (err) {
             console.log(err)
         }
-        res.render(`index.ejs`, {
+        res.render(`city.ejs`, {
             restaurant: dubaiRestaurants
         })
     })
@@ -16,32 +16,62 @@ router.get(`/`, (req, res) => {
 
 // NEW
 router.get(`/new`, (req, res) => {
-    res.send(`New`)
+    res.render(`addNewRestaurant.ejs`)
 })
 
 // CREATE
 router.post(`/`, (req, res) => {
-    res.redirect(`/restaurantfinder`)
+    let type = req.body.type
+    req.body.type = type.split(`, `)
+    Restaurant.create(req.body, () => {
+        res.redirect(`/restaurantfinder/dubai`)
+    })
 })
 
 // SHOW
 router.get(`/:id`, (req, res) => {
-    res.send(`Show`)
+    Restaurant.findById(req.params.id, (err, foundRestaurants) => {
+        if (err) {
+            console.log(err)
+        }
+        res.render(`restaurant.ejs`, {
+            restaurant: foundRestaurants
+        })
+    })
 })
 
 // EDIT
 router.get(`/:id/edit`, (req, res) => {
-    res.send(`Edit`)
+    Restaurant.findById(req.params.id, (err, foundRestaurants) => {
+        if (err) {
+            console.log(err)
+        }
+        res.render(`editRestaurant.ejs`, {
+            restaurant: foundRestaurants
+        })
+    })
 })
 
 // UPDATE
 router.put(`/:id`, (req, res) => {
-    res.redirect(`/restaurantfinder`)
+    let type = req.body.type
+    req.body.type = type.split(`, `)
+    Restaurant.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedRestaurant) => {
+        if (err) {
+            console.log(err)
+        }
+        res.redirect(`/restaurantfinder/dubai/${req.params.id}`)
+    })
 })
 
 // DESTROY
 router.delete(`/:id`, (req, res) => {
-    res.redirect(`/restaurantfinder`)
+    Restaurant.findByIdAndRemove(req.params.id, (err, data) => {
+        if (err) {
+            console.log(err)
+        }
+        res.redirect(`/restaurantfinder/dubai`)
+    })
 })
 
 module.exports = router
