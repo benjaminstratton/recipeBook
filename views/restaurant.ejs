@@ -2,6 +2,15 @@
 <html lang="en">
   <%- include('./partials/head.ejs')%>
   <body>
+    <div>
+      <a
+        href="/<%=restaurant.name%>/<%=restaurant.id%>/edit"
+        class="btn btn-secondary"
+        >Edit</a
+      >
+      <a href="#">Delete</a>
+    </div>
+
     <div class="container text-center m-5">
       <h1><%=restaurant.name%></h1>
       <div class="col-6 my-3 mx-auto">
