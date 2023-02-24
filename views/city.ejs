@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs')%>
+  <body>
+    <div class="container text-center">
+      <h1 class="m-3"><%=city[0].city%></h1>
+      <h3>The most exclusive restaurants</h3>
+      <div class="container d-flex flex-wrap gap-3 my-5">
+        <%for(let i = 0; i< city.length; i++){%>
+        <div class="card" style="width: 12rem">
+          <img
+            class="card-img-top"
+            src="<%=city[i].img%>"
+            alt="<%=city[i].name%>"
+          />
+          <div class="card-body">
+            <h3 class="card-title"><%=city[i].name%></h3>
+            <a
+              href="/restaurantfinder/paris/<%=city[i].id%>"
+              class="btn btn-light"
+              >Click me!</a
+            >
+          </div>
+        </div>
+        <% }%>
+      </div>
+    </div>
+  </body>
+</html>
