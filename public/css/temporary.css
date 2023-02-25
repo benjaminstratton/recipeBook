@@ -6,7 +6,8 @@
 
 body {
   background-color: #c7d4ca;
-  color: #4a574c;
+  color: #ffffff;
+  /* color: #4a574c; */
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -14,6 +15,17 @@ img {
   max-height: 200px;
   display: inline-block;
   width: 100%;
+}
+
+.heading {
+  padding: 5rem 3rem;
+}
+.container-fluid {
+  background-color: #4a574c;
+}
+
+.main {
+  margin: 5rem 0;
 }
 
 .content-banner {
@@ -27,10 +39,17 @@ img {
   padding-top: 125px;
 }
 nav {
-  background-color: #c7d4ca;
+  /* background-color: #c7d4ca; */
   height: 7rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+footer {
+  background-color: #4a574c;
+}
 .card {
   background-color: #c7d4ca;
   border: none;
@@ -106,6 +125,9 @@ nav {
   z-index: 2;
   font-weight: 400;
   margin-top: 0;
+}
+.container-fluid {
+  padding: 0;
 }
 
 .header {

@@ -1,75 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <%- include('./partials/head.ejs')%>
-  <title>restaurantFinder.</title>
-</head>
-<body>
-  <%- include('./partials/nav.ejs')%>
-  <section class="content-banner">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-12">
-                <div class="banner-con text-center">
-                    <p class="first-title">Choose the city you want to visit!</p>
-                    <p class="banner-des">And pick one of the many places where you will be served amazing food
-                      made by the best chef's all around the world</p>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-  <section class="body">
-    <div class="container">
-      <div class="row mb-3 justify-content-center">
-        <div class="card card_paris col-3 mx-3" style="height: 15rem">
-          <a href="/restaurantfinder/paris">
-            <div class="card_title">
-              <h2>PARIS</h2>
-            </div>
-          </a>
-        </div>
-        <div class="card card_ny col-3 mx-3" style="height: 15rem">
-          <a href="/restaurantfinder/ny/">
-            <div class="card_title">
-              <h2>NY</h2>
-            </div>
-          </a>
-        </div>
-        <div class="card card_london col-3 mx-3" style="height: 15rem">
-          <a href="/restaurantfinder/london/">
-            <div class="card_title">
-              <h2>London</h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="card card_la col-3 mx-3" style="height: 15rem">
-          <a href="/restaurantfinder/la/">
-            <div class="card_title">
-              <h2>LA</h2>
-            </div>
-          </a>
-        </div>
-        <div class="card card_dubai col-3 mx-3" style="height: 15rem">
-          <a href="/restaurantfinder/dubai/">
-            <div class="card_title">
-              <h2>DUBAI</h2>
-            </div>
-          </a>
-        </div>
-        <div class="card card_sydney col-3 mx-3" style="height: 15rem">
-          <a href="/restaurantfinder/sydney/">
-            <div class="card_title">
-              <h2>SYDNEY</h2>
-            </div>
-          </a>
-        </div>
+  <head>
+    <%- include('./partials/head.ejs')%>
+    <title>restaurantFinder.</title>
+  </head>
+  <body>
+    <%- include('./partials/nav.ejs')%>
+    <div class="container-fluid container_heading text-center">
+      <div class="heading">
+        <h1 class="p-3">Choose the city you want to visit!</h1>
+        <h4 class="mx-5">
+          And pick one of the many places where you will be served amazing food
+          made by the best chef's all around the world
+        </h4>
       </div>
     </div>
-  </section>
-  <%- include('./partials/footer.ejs')%>
-  <%- include('./partials/scripts.ejs')%>
-</body>
+    <section class="main">
+      <div class="container">
+        <div class="row mb-3 justify-content-center">
+          <div class="card card_paris col-3 mx-3" style="height: 15rem">
+            <a href="/restaurantfinder/paris">
+              <div class="card_title">
+                <h2>PARIS</h2>
+              </div>
+            </a>
+          </div>
+          <div class="card card_ny col-3 mx-3" style="height: 15rem">
+            <a href="/restaurantfinder/ny/">
+              <div class="card_title">
+                <h2>NY</h2>
+              </div>
+            </a>
+          </div>
+          <div class="card card_london col-3 mx-3" style="height: 15rem">
+            <a href="/restaurantfinder/london/">
+              <div class="card_title">
+                <h2>London</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="card card_la col-3 mx-3" style="height: 15rem">
+            <a href="/restaurantfinder/la/">
+              <div class="card_title">
+                <h2>LA</h2>
+              </div>
+            </a>
+          </div>
+          <div class="card card_dubai col-3 mx-3" style="height: 15rem">
+            <a href="/restaurantfinder/dubai/">
+              <div class="card_title">
+                <h2>DUBAI</h2>
+              </div>
+            </a>
+          </div>
+          <div class="card card_sydney col-3 mx-3" style="height: 15rem">
+            <a href="/restaurantfinder/sydney/">
+              <div class="card_title">
+                <h2>SYDNEY</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./partials/footer.ejs')%> <%-
+    include('./partials/scripts.ejs')%>
+  </body>
 </html>
