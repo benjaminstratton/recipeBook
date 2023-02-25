@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
   <%- include('./partials/head.ejs')%>
-  <body>
-    <%- include('./partials/nav.ejs')%>
-    <div class="container text-center mb-5">
-      <h1>Choose the city you want to visit!</h1>
-      <h5 class="mx-5">
-        And pick one of the many places where you will be served amazing food
-        made by the best chef's all around the world
-      </h5>
+  <title>restaurantFinder.</title>
+</head>
+<body>
+  <%- include('./partials/nav.ejs')%>
+  <section class="content-banner">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12">
+                <div class="banner-con text-center">
+                    <p class="first-title">Choose the city you want to visit!</p>
+                    <p class="banner-des">And pick one of the many places where you will be served amazing food
+                      made by the best chef's all around the world</p>
+                </div>
+            </div>
+        </div>
     </div>
+  </section>
+  <section class="body">
     <div class="container">
       <div class="row mb-3 justify-content-center">
         <div class="card card_paris col-3 mx-3" style="height: 15rem">
@@ -58,8 +68,8 @@
         </div>
       </div>
     </div>
-    <div class="footer"></div>
-
-    <%- include('./partials/scripts.ejs')%>
-  </body>
+  </section>
+  <%- include('./partials/footer.ejs')%>
+  <%- include('./partials/scripts.ejs')%>
+</body>
 </html>
