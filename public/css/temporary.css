@@ -6,10 +6,15 @@
     min-height: 200vh;
 }
 
+img {
+    max-height: 200px;
+    display: inline-block;
+}
+
 .content-banner {
     color: #ffffff;
     background-color: seagreen;
-    min-height: 400px;
+    min-height: 42vh;
     height: 100%;
     position: relative;
     background-position: center center;
@@ -35,7 +40,7 @@
     line-height: 1.2;
     position: relative;
     z-index: 2;
-    margin: 0px 0px 12px;
+    margin: 24px 0px 12px;
 }
 
 .content-banner .banner-des {
