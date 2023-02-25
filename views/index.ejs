@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
   <%- include('./partials/head.ejs')%>
-  <body>
-    <% for( let index = 0; index < restaurant.length; index++ ) { %>
-    <p><%= restaurant[index].name %></p>
-    <% } %>
-  </body>
+  <title>Document</title>
+</head>
+<body>
+  <%- include('./partials/nav.ejs')%>
+  <section class="content-banner">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12">
+                <div class="banner-con text-center">
+                    <p class="first-title">Rename</p>
+                    <p class="banner-des">A little description of the Website</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </section>
+  <section class="body"></section>
+  <%- include('./partials/scripts.ejs')%>
+</body>
 </html>
