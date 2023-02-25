@@ -66,7 +66,7 @@ module.exports = [
 
 
 
-        city: 'New York',
+        city: 'NY',
         name: "Eleven Madison Park",
         address: '11 Madison Ave, New York, NY 10010',
         website: 'https://www.elevenmadisonpark.com/',
@@ -76,7 +76,7 @@ module.exports = [
         rating: 4.5
     },
     {
-        city: 'New York',
+        city: 'NY',
         name: "STK Steakhouse Midtown NYC",
         address: '1114 6th Ave, New York, NY 10036',
         website: 'https://stksteakhouse.com/venues/nyc-midtown/',
@@ -86,7 +86,7 @@ module.exports = [
         rating: 4.6
     },
     {
-        city: 'New York',
+        city: 'NY',
         name: "Olio e Più",
         address: '3 Greenwich Ave, New York, NY 10014',
         website: 'https://www.olioepiu.com/',
@@ -96,7 +96,7 @@ module.exports = [
         rating: 4.5
     },
     {
-        city: 'New York',
+        city: 'NY',
         name: "Boucherie West Village",
         address: '99 7th Ave S, New York, NY 10014',
         website: 'https://www.boucherie.nyc/',
@@ -106,7 +106,7 @@ module.exports = [
         rating: 4.5
     },
     {
-        city: 'New York',
+        city: 'NY',
         name: "Le Coucou",
         address: '99 7th Ave S, New York, NY 10014',
         website: 'https://lecoucou.com/',
@@ -116,7 +116,7 @@ module.exports = [
         rating: 4.5
     },
     {
-        city: 'New York',
+        city: 'NY',
         name: "La Grande Boucherie",
         address: '145 W 53rd St, New York, NY 10019',
         website: 'https://www.boucherie.nyc/',
@@ -130,7 +130,7 @@ module.exports = [
 
 
     {
-        city: 'Los Angeles',
+        city: 'LA',
         name: "République Café Bakery & République Restaurant",
         address: '624 S La Brea Ave, Los Angeles, CA 90036',
         website: 'https://republiquela.com/',
@@ -140,7 +140,7 @@ module.exports = [
         rating: 4.6
     },
     {
-        city: 'Los Angeles',
+        city: 'LA',
         name: "Otium",
         address: ' 222 S Hope St, Los Angeles, CA 90012',
         website: 'https://otiumla.com/',
@@ -150,7 +150,7 @@ module.exports = [
         rating: 4.5
     },
     {
-        city: 'Los Angeles',
+        city: 'LA',
         name: "Damian",
         address: '2132 E 7th Pl, Los Angeles, CA 90021',
         website: 'https://damiandtla.com/',
@@ -160,7 +160,7 @@ module.exports = [
         rating: 4.6
     },
     {
-        city: 'Los Angeles',
+        city: 'LA',
         name: "Yard House",
         address: '800 W Olympic Blvd A-115, Los Angeles, CA 90015',
         website: 'https://yardhouse.com/',
@@ -170,7 +170,7 @@ module.exports = [
         rating: 4.4
     },
     {
-        city: 'Los Angeles',
+        city: 'LA',
         name: "FIN",
         address: '12223 W Washington Blvd, Los Angeles, CA 90066',
         website: 'https://finasiantapas.com/home/',
@@ -180,7 +180,7 @@ module.exports = [
         rating: 4.4
     },
     {
-        city: 'Los Angeles',
+        city: 'LA',
         name: "La Boucherie",
         address: '900 Wilshire Blvd fl 71, Los Angeles, CA 90017',
         website: 'https://downtownla.com/go/la-boucherie/',
