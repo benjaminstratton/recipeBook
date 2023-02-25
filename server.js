@@ -4,6 +4,9 @@ const mongoose = require(`mongoose`)
 const methodOverride = require(`method-override`)
 require(`dotenv`).config()
 
+
+
+
 // Controllers
 const dubaiController = require(`./controllers/dubai.js`)
 const londonController = require(`./controllers/london.js`)
@@ -17,6 +20,8 @@ const sydneyController = require(`./controllers/sydney.js`)
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride(`_method`))
 app.use(express.static('public'))
+
+
 
 // Middleware for Controllers
 app.use('/restaurantfinder/dubai', dubaiController)
