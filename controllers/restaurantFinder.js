@@ -15,7 +15,10 @@ router.get('/seed', (req, res) => {
 
 // INDEX
 router.get(`/`, (req, res) => {
+
     res.render(`index.ejs`)
+
+
 })
 
 module.exports = router
