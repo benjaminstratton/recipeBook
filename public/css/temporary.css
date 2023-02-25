@@ -8,7 +8,6 @@
 .body {
   background-color: #c7d4ca;
   color: #4a574c;
-  min-height: 200vh;
 }
 
 img {
@@ -24,8 +23,8 @@ img {
 
 .content-banner {
     color: #ffffff;
-    background-color: #c7d4ca;
-    min-height: 30vh;
+    background-color: #4A574C;
+    min-height: 35vh;
     height: 100%;
     position: relative;
     background-position: center center;
@@ -55,7 +54,7 @@ img {
 }
 
 .content-banner .banner-des {
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 150%;
   letter-spacing: 0;
   position: relative;
@@ -112,6 +111,11 @@ img {
   color: black;
 }
 
+.navbar-scroll .nav-item .nav-link:hover,
+.dropdown-item:hover {
+    color: orange;
+}
+
 .navbar-scroll .navbar-brand {
   color: black;
   font-weight: 500;
@@ -119,4 +123,27 @@ img {
 
 .body .container {
     padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+footer {
+    background: #4A574C;
+}
+footer h5 {
+    color: #ffffff;
+    text-align: left;
+}
+footer p {
+    color: #ffffff;
+    text-align: left;
+}
+footer p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+footer p a:hover {
+    color: orange;
+}
+footer p i, footer hr, strong {
+    color: orange;
 }
