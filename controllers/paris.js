@@ -8,7 +8,7 @@ router.get(`/`, (req, res) => {
         if (err) {
             console.log(err)
         }
-        res.render('city.ejs', { city: data })
+        res.render('city.ejs', { restaurant: data })
     })
 
 })
@@ -36,13 +36,31 @@ router.get(`/:id`, (req, res) => {
 
 // EDIT
 router.get(`/:id/edit`, (req, res) => {
-    res.send(`Edit`)
+    Restaurant.findById(req.params.id, (err, data) => {
+        if (err) {
+            console.log(err)
+        }
+        res.render(`editRestaurant.ejs`, { restaurant: data })
+    }
+
+    )
 })
 
 // UPDATE
 router.put(`/:id`, (req, res) => {
-    res.redirect(`/restaurantfinder`)
+    if (req.body.type) {
+        req.body.type = type.split(`,`)
+    }
+    Restaurant.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedRestaurant) => {
+        if (err) {
+            console.log(err)
+        }
+        res.redirect(`/restaurantfinder/paris/${req.params.id}`)
+    })
 })
+
+
+
 
 // DESTROY
 router.delete(`/:id`, (req, res) => {
