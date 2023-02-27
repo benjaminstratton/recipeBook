@@ -6,43 +6,38 @@
     <div class="container text-center">
       <h1 class="m-3"><%=restaurant[0].city%></h1>
       <h3>The most exclusive restaurants</h3>
-      <div class="container my-5">
-        <div class="row">
+      <div class="container d-flex flex-column gap-5 my-5">
+        <div class="row d-flex justify-content-center">
           <%for(let i = 0; i< (restaurant.length - 3); i++){%>
-          <div class="card col-4">
-            <img
-              class="card-img-top"
-              src="<%=restaurant[i].img%>"
-              alt="<%=restaurant[i].name%>"
-            />
-            <div class="card-body">
-              <h3 class="card-title"><%=restaurant[i].name%></h3>
-              <a
-                href="/restaurantfinder/paris/<%=restaurant[i].id%>"
-                class="btn btn-light"
-                >Click me!</a
-              >
-            </div>
+          <div class="col-4 has-bg-img restaurant">
+            <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
+              ><img
+                class="bg-img"
+                src="<%=restaurant[i].img%>"
+                alt="<%=restaurant[i].name%>"
+              />
+              <div class="card_title">
+                <h2><%=restaurant[i].name%></h2>
+              </div>
+            </a>
           </div>
 
           <% }%>
         </div>
-        <div class="row">
-          <%for(let i = 0; (i + 3) < restaurant.length; i++){%>
-          <div class="card col-4">
-            <img
-              class="card-img-top"
-              src="<%=restaurant[i].img%>"
-              alt="<%=restaurant[i].name%>"
-            />
-            <div class="card-body">
-              <h3 class="card-title"><%=restaurant[i].name%></h3>
-              <a
-                href="/restaurantfinder/paris/<%=restaurant[i].id%>"
-                class="btn btn-light"
-                >Click me!</a
-              >
-            </div>
+        <div class="row d-flex justify-content-center">
+          <!--  -->
+          <%for(let i = 3; i < (restaurant.length); i++){%>
+          <div class="col-4 has-bg-img restaurant">
+            <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
+              ><img
+                class="bg-img"
+                src="<%=restaurant[i].img%>"
+                alt="<%=restaurant[i].name%>"
+              />
+              <div class="card_title">
+                <h2><%=restaurant[i].name%></h2>
+              </div>
+            </a>
           </div>
           <% }%>
         </div>
