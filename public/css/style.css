@@ -49,8 +49,27 @@ img {
   margin: 12px 0px 12px;
 }
 
+.content-banner .secondary-title {
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
+  margin: 12px 0px 12px;
+}
+
 .content-banner .banner-des {
   font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.content-banner .secondary-des {
+  font-size: 1.3rem;
   line-height: 150%;
   letter-spacing: 0;
   position: relative;
@@ -123,6 +142,11 @@ header {
 
 .main {
   margin: 7rem auto;
+}
+
+#form-bodies {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .card {

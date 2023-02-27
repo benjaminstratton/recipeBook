@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('./partials/head.ejs')%>
+  <head>
+    <%- include('./partials/head.ejs')%>
+    <title>Edit <%= restaurant.name %></title>
+  </head>
   <body>
-    <div class="container">
+    <%- include('./partials/nav.ejs') %>
+    <div class="container" id="form-bodies">
       <h2 class="text-center mt-5">Edit <%=restaurant.name%></h2>
       <form
         action="/restaurantfinder/<%=restaurant.city%>/<%=restaurant.id%>?_method=PUT"
@@ -54,5 +58,7 @@
         </div>
       </form>
     </div>
+    <%- include('./partials/footer.ejs') %>
+    <%- include('./partials/scripts.ejs') %>
   </body>
 </html>

@@ -20,7 +20,10 @@ router.get(`/new`, (req, res) => {
 
 // CREATE
 router.post(`/`, (req, res) => {
-    res.redirect(`/restaurantfinder`)
+    Restaurant.create(req.body, () => {
+        console.log(req.body)
+        res.redirect(`/restaurantfinder/paris`)
+    })
 })
 
 // SHOW
