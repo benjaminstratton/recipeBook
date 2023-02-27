@@ -64,7 +64,7 @@ header {
   width: 100%;
 }
 
-.header-inner {
+.nav-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -100,7 +100,6 @@ header {
 
 .navbar-scroll {
   background-color: #c7d4ca;
-  padding: 0;
   position: fixed;
   top: 0;
   z-index: 99;
