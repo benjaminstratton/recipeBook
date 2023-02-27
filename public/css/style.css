@@ -144,6 +144,11 @@ header {
   margin: 7rem auto;
 }
 
+#form-bodies {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
 .card {
   background-color: #c7d4ca;
   border: none;
