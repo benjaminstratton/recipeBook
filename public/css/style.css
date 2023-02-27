@@ -12,20 +12,20 @@ body {
 }
 
 img {
-    max-height: 200px;
-    display: inline-block;
-    width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  max-width: 100%;
 }
 
 .content-banner {
-    color: #ffffff;
-    background-color: #4A574C;
-    min-height: 35vh;
-    height: 100%;
-    position: relative;
-    background-position: center center;
-    background-size: cover;
-    padding-top: 125px;
+  color: #ffffff;
+  background-color: #4a574c;
+  min-height: 35vh;
+  height: 100%;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 125px;
 }
 
 .content-banner:before {
@@ -33,7 +33,7 @@ img {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #4A574C;
+  background-color: #4a574c;
   opacity: 0.7;
   top: 0;
   left: 0;
@@ -41,12 +41,12 @@ img {
 }
 
 .content-banner .first-title {
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 1.2;
-    position: relative;
-    z-index: 2;
-    margin: 12px 0px 12px;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
+  margin: 12px 0px 12px;
 }
 
 .content-banner .banner-des {
@@ -114,7 +114,7 @@ header {
 
 .navbar-scroll .nav-item .nav-link:hover,
 .dropdown-item:hover {
-    color: orange;
+  color: orange;
 }
 
 .navbar-scroll .navbar-brand {
@@ -122,81 +122,91 @@ header {
   font-weight: 500;
 }
 
-.main .container {
-    padding-top: 75px;
-    padding-bottom: 75px;
+.main {
+  margin: 7rem auto;
 }
 
 .card {
-    background-color: #c7d4ca;
-    border: none;
-    position: relative;
+  background-color: #c7d4ca;
+  border: none;
+  position: relative;
+  transition: all 1s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 60%), 0 6px 20px 0 rgb(0 0 0 / 40%);
+  text-align: center;
 }
 
 .card_paris {
-background-image: url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
-background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
+  background-size: cover;
+}
+.restaurant {
+  position: relative;
 }
 
 .card_ny {
-background-image: url("https://images.unsplash.com/photo-1522083165195-3424ed129620?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1597&q=80");
-background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1522083165195-3424ed129620?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1597&q=80");
+  background-size: cover;
 }
 
 .card_london {
-background-image: url("https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
-background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+  background-size: cover;
 }
 
 .card_la {
-background-image: url("https://images.unsplash.com/photo-1580655653885-65763b2597d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1580655653885-65763b2597d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
 }
 .card_sydney {
-background-image: url("https://images.unsplash.com/photo-1584772121849-56c717d6c542?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1447&q=80");
-background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1584772121849-56c717d6c542?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1447&q=80");
+  background-size: cover;
 }
 
 .card_dubai {
-background-image: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
 }
 
 .card_title {
-color: white;
-height: 100px;
-width: 100px;
-position: absolute;
-left: 50%;
-margin-left: -50px;
-top: 50%;
-margin-top: -50px;
-display: flex;
-align-items: center;
-justify-content: center;
+  color: white;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
-    background: #4A574C;
+  background: #4a574c;
 }
 footer .logo {
   font-family: 'Gloock', serif;
 }
 footer h5 {
-    color: #ffffff;
-    text-align: left;
+  color: #ffffff;
+  text-align: left;
 }
 footer p {
-    color: #ffffff;
-    text-align: left;
+  color: #ffffff;
+  text-align: left;
 }
 footer p a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 footer p a:hover {
-    color: orange;
+  color: orange;
 }
-footer p i, footer hr, strong {
-    color: orange;
+footer p i,
+footer hr,
+strong {
+  color: orange;
 }
