@@ -145,6 +145,12 @@ header {
   position: relative;
   height: 15rem;
   border-radius: 3px;
+  transition: all 1s;
+  padding: 0;
+}
+.restaurant:hover {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 60%), 0 6px 20px 0 rgb(0 0 0 / 40%);
+  text-align: center;
 }
 
 .card_ny {
