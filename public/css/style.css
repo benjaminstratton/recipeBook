@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
 * {
   scroll-behavior: smooth;
@@ -58,7 +59,7 @@ img {
   margin-top: 0;
 }
 
-.header {
+header {
   position: relative;
   width: 100%;
 }
@@ -69,11 +70,16 @@ img {
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: transparent;
+  background-color: #4A574C;
+}
+
+.navbar-toggler {
+  filter: invert(1);
 }
 
 .navbar-brand {
   color: #ffffff;
+  font-family: 'Gloock', serif;
 }
 
 .nav-item .nav-link {
@@ -180,6 +186,9 @@ img {
 
 footer {
   background: #4a574c;
+}
+footer .logo {
+  font-family: 'Gloock', serif;
 }
 footer h5 {
   color: #ffffff;
