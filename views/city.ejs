@@ -3,13 +3,13 @@
   <%- include('./partials/head.ejs')%>
   <body>
     <%- include('./partials/nav.ejs')%>
-    <div class="container text-center">
+    <div class="container text-center my-5">
       <h1 class="m-3"><%=restaurant[0].city%></h1>
       <h3>The most exclusive restaurants</h3>
       <div class="container d-flex flex-column gap-5 my-5">
         <div class="row d-flex justify-content-center">
           <%for(let i = 0; i< (restaurant.length - 3); i++){%>
-          <div class="col-4 has-bg-img restaurant">
+          <div class="col-4 has-bg-img bg-blend-overlay restaurant">
             <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
               ><img
                 class="bg-img"
@@ -27,7 +27,7 @@
         <div class="row d-flex justify-content-center">
           <!--  -->
           <%for(let i = 3; i < (restaurant.length); i++){%>
-          <div class="col-4 has-bg-img restaurant">
+          <div class="col-4 has-bg-img bg-blend-overlay restaurant">
             <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
               ><img
                 class="bg-img"
@@ -43,5 +43,6 @@
         </div>
       </div>
     </div>
+    <%- include('./partials/footer.ejs') %>
   </body>
 </html>

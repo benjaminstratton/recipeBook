@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
 
 * {
   scroll-behavior: smooth;
@@ -70,7 +70,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: #4A574C;
+  background-color: #4a574c;
 }
 
 .navbar-toggler {
@@ -79,7 +79,7 @@ header {
 
 .navbar-brand {
   color: #ffffff;
-  font-family: 'Gloock', serif;
+  font-family: "Gloock", serif;
 }
 
 .nav-item .nav-link {
@@ -183,11 +183,23 @@ header {
   justify-content: center;
 }
 
+.action-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  padding-right: 5rem;
+  margin: 2rem 0;
+}
+
+.action-group > * {
+  width: 5rem;
+}
+
 footer {
   background: #4a574c;
 }
 footer .logo {
-  font-family: 'Gloock', serif;
+  font-family: "Gloock", serif;
 }
 footer h5 {
   color: #ffffff;
