@@ -60,7 +60,7 @@ router.delete(`/:id`, (req, res) => {
     Restaurant.findByIdAndRemove(req.params.id, (err, data) => {
         if (err) {
             console.log(err)
-        } res.redirect(`/restaurantfinder/paris`)
+        } res.redirect(`/paris`)
     })
 
 })

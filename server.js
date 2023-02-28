@@ -24,13 +24,13 @@ app.use(express.static('public'))
 
 
 // Middleware for Controllers
-app.use('/restaurantfinder/dubai', dubaiController)
-app.use('/restaurantfinder/london', londonController)
-app.use('/restaurantfinder/la', losAngelesController)
-app.use('/restaurantfinder/ny', newYorkController)
-app.use('/restaurantfinder/paris', parisController)
-app.use('/restaurantfinder', restaurantFinderController)
-app.use('/restaurantfinder/sydney', sydneyController)
+app.use('/dubai', dubaiController)
+app.use('/london', londonController)
+app.use('/la', losAngelesController)
+app.use('/ny', newYorkController)
+app.use('/paris', parisController)
+app.use('/', restaurantFinderController)
+app.use('/sydney', sydneyController)
 
 mongoose.connect(process.env.MONGODB, () => {
     console.log('The connection with mongodb is established');
