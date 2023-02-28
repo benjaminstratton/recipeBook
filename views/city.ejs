@@ -12,47 +12,60 @@
           <div class="col-md-12">
             <div class="banner-con text-center">
               <h1 class="secondary-title"><%=restaurant[0].city%></h1>
-              <p class="secondary-des">The best restaurants hand-picked just for you</p>
+              <p class="secondary-des">
+                The best restaurants hand-picked just for you
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="container d-flex flex-column gap-5 my-5">
-      <div class="row d-flex justify-content-center gap-3">
-        <%for(let i = 0; i< (restaurant.length - 3); i++){%>
-        <div class="col-3 has-bg-img restaurant">
-          <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
-            ><img
-              class="bg-img rounded"
-              src="<%=restaurant[i].img%>"
-              alt="<%=restaurant[i].name%>"
-            />
-            <div class="card_title">
-              <h2><%=restaurant[i].name%></h2>
-            </div>
-          </a>
+    <section class="main">
+      <div class="container d-flex flex-column gap-5">
+        <div class="row d-flex justify-content-center gap-3">
+          <%for(let i = 0; i< (restaurant.length - 3); i++){%>
+          <div class="col-3 has-bg-img restaurant">
+            <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
+              ><img
+                class="bg-img rounded"
+                src="<%=restaurant[i].img%>"
+                alt="<%=restaurant[i].name%>"
+              />
+              <div class="card_title">
+                <h2><%=restaurant[i].name%></h2>
+              </div>
+            </a>
+          </div>
+          <% }%>
         </div>
-        <% }%>
-      </div>
-      <div class="row d-flex justify-content-center gap-3">
-        <!--  -->
-        <%for(let i = 3; i < (restaurant.length); i++){%>
-        <div class="col-3 has-bg-img bg-blend-overlay restaurant">
-          <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
-            ><img
-              class="bg-img rounded"
-              src="<%=restaurant[i].img%>"
-              alt="<%=restaurant[i].name%>"
-            />
-            <div class="card_title">
-              <h2><%=restaurant[i].name%></h2>
-            </div>
-          </a>
+        <div class="row d-flex justify-content-center gap-3">
+          <!--  -->
+          <%for(let i = 3; i < (restaurant.length); i++){%>
+          <div class="col-3 has-bg-img bg-blend-overlay restaurant">
+            <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
+              ><img
+                class="bg-img rounded"
+                src="<%=restaurant[i].img%>"
+                alt="<%=restaurant[i].name%>"
+              />
+              <div class="card_title">
+                <h2><%=restaurant[i].name%></h2>
+              </div>
+            </a>
+          </div>
+          <% }%>
         </div>
-        <% }%>
+        <div class="row d-flex justify-content-center">
+          <div class="col-3 text-center">
+            <a
+              href="/restaurantfinder/<%=restaurant[0].city%>/new"
+              class="btn btn-light px-5 py-3"
+              >Add New Restaurant</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
     <%- include('./partials/footer.ejs')%> <%-
     include('./partials/scripts.ejs')%>
   </body>
