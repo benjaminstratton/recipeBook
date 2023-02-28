@@ -21,11 +21,15 @@
     <section class="main">
       <div class="container text-center my-5 mx-auto">
         <div class="row">
-          <div class="offset-6 col-3 float-right"><%= restaurant.type%></div>
+          <div class="col-3 mx-auto my-0"><%= restaurant.type%></div>
         </div>
         <div class="row">
           <div class="col-6 my-3 mx-auto">
-            <img src="<%=restaurant.img%>" alt="<%restaurant.name%>" />
+            <img
+              src="<%=restaurant.img%>"
+              alt="<%restaurant.name%>"
+              class="rounded"
+            />
           </div>
         </div>
         <div class="row">

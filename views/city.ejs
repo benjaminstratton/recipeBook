@@ -23,25 +23,8 @@
     <section class="main">
       <div class="container d-flex flex-column gap-5">
         <div class="row d-flex justify-content-center gap-3">
-          <%for(let i = 0; i< (restaurant.length - 3); i++){%>
+          <%for(let i = 0; i< restaurant.length; i++){%>
           <div class="col-3 has-bg-img restaurant">
-            <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
-              ><img
-                class="bg-img rounded"
-                src="<%=restaurant[i].img%>"
-                alt="<%=restaurant[i].name%>"
-              />
-              <div class="card_title">
-                <h2><%=restaurant[i].name%></h2>
-              </div>
-            </a>
-          </div>
-          <% }%>
-        </div>
-        <div class="row d-flex justify-content-center gap-3">
-          <!--  -->
-          <%for(let i = 3; i < (restaurant.length); i++){%>
-          <div class="col-3 has-bg-img bg-blend-overlay restaurant">
             <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
               ><img
                 class="bg-img rounded"
@@ -57,9 +40,7 @@
         </div>
         <div class="row d-flex justify-content-center">
           <div class="col-3 text-center">
-            <a
-              href="/restaurantfinder/<%=restaurant[0].city%>/new"
-              class="btn btn-light px-5 py-3"
+            <a href="/restaurantfinder/new" class="btn btn-light px-5 py-3"
               >Add New Restaurant</a
             >
           </div>

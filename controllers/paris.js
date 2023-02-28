@@ -13,21 +13,7 @@ router.get(`/`, (req, res) => {
 
 })
 
-// NEW
-router.get(`/new`, (req, res) => {
-    res.render(`addNewRestaurant.ejs`)
-})
 
-// CREATE
-router.post(`/`, (req, res) => {
-    Restaurant.create(req.body, (err, newRestaurant) => {
-        if (err) {
-            console.log(err)
-        } console.log(newRestaurant)
-
-        // res.redirect(`/restaurantfinder/paris`)
-    })
-})
 
 // SHOW
 router.get(`/:id`, (req, res) => {
@@ -70,7 +56,12 @@ router.put(`/:id`, (req, res) => {
 
 // DESTROY
 router.delete(`/:id`, (req, res) => {
-    res.redirect(`/restaurantfinder`)
+    Restaurant.findByIdAndRemove(req.params.id, (err, data) => {
+        if (err) {
+            console.log(err)
+        } res.redirect(`/restaurantfinder/paris`)
+    })
+
 })
 
 module.exports = router
