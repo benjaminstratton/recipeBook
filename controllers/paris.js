@@ -13,18 +13,19 @@ router.get(`/`, (req, res) => {
 
 })
 
-
-
 // SHOW
 router.get(`/:id`, (req, res) => {
     Restaurant.findById(req.params.id, (err, data) => {
         if (err) {
             console.log(err)
         }
+
         res.render(`restaurant.ejs`, { restaurant: data })
     })
 
 })
+
+
 
 // EDIT
 router.get(`/:id/edit`, (req, res) => {

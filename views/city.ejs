@@ -10,7 +10,7 @@
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-12">
-            <div class="banner-con text-center">
+            <div class="banner-con text-center py-5">
               <h1 class="secondary-title"><%=restaurant[0].city%></h1>
               <p class="secondary-des">
                 The best restaurants hand-picked just for you
@@ -25,7 +25,9 @@
         <div class="row d-flex justify-content-center gap-3">
           <%for(let i = 0; i< restaurant.length; i++){%>
           <div class="col-3 has-bg-img restaurant">
-            <a href="/restaurantfinder/paris/<%=restaurant[i].id%>"
+            <a
+              href="/restaurantfinder/<%=restaurant[0]
+            .city %>/<%=restaurant[i].id%>"
               ><img
                 class="bg-img rounded"
                 src="<%=restaurant[i].img%>"

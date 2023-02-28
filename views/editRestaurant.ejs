@@ -42,6 +42,16 @@
             value="<%=restaurant.description%>"
           />
         </div>
+        <div class="form-group m-3">
+          <label for="restaurantType">Restaurant Type</label>
+          <input
+            type="text"
+            name="type"
+            class="form-control"
+            id="restaurantType"
+            value="<%=restaurant.type%>"
+          />
+        </div>
 
         <div class="form-group m-3">
           <label for="restaurantAddress">Restaurant Address</label>
@@ -58,7 +68,7 @@
         </div>
       </form>
     </div>
-    <%- include('./partials/footer.ejs') %>
-    <%- include('./partials/scripts.ejs') %>
+    <%- include('./partials/footer.ejs') %> <%-
+    include('./partials/scripts.ejs') %>
   </body>
 </html>

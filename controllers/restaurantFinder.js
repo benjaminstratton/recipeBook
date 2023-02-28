@@ -32,10 +32,12 @@ router.post(`/`, (req, res) => {
     Restaurant.create(req.body, (err, newRestaurant) => {
         if (err) {
             console.log(err)
-        } console.log(newRestaurant)
+        }
 
         res.redirect(`/restaurantfinder/${city}`)
     })
 })
+
+
 
 module.exports = router
