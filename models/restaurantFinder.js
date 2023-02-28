@@ -49,7 +49,6 @@ module.exports = [
         type: ['French Restaurant', 'Small Plates', 'Mediterenian Cousine'],
         rating: 4.8
     },
-
     {
         city: 'Paris',
         name: "Frenchie",
@@ -60,12 +59,7 @@ module.exports = [
         type: ['French Restaurant', 'Small Plates', 'Mediterenian Cousine'],
         rating: 4.5
     },
-
-
     {
-
-
-
         city: 'NY',
         name: "Eleven Madison Park",
         address: '11 Madison Ave, New York, NY 10010',
@@ -125,10 +119,6 @@ module.exports = [
         type: ['French Restaurant'],
         rating: 4.5
     },
-
-
-
-
     {
         city: 'LA',
         name: "République Café Bakery & République Restaurant",
@@ -189,10 +179,7 @@ module.exports = [
         type: ['Steak House'],
         rating: 4.5
     },
-
-
     {
-
         city: `Sydney`,
         name: `Aria Restaurant Sydney`,
         address: `1 Macquire St, Sydney NSW 2000, Australia`,
@@ -270,9 +257,6 @@ module.exports = [
         ],
         rating: 4.6
     },
-
-
-
     {
         city: `London`,
         name: `Twist Connubio`,
@@ -292,7 +276,7 @@ module.exports = [
         address: `10 Berners St, London W1T 3NP, United Kingdom`,
         website: `http://www.bernerstavern.com/`,
         description: `Jason Atherton's upmarket Modern British restaurant in Ian Schrager's London Edition Hotel.`,
-        img: ``,
+        img: `https://www.oxfordstreet.co.uk/wp-content/uploads/2016/07/resized1.jpg`,
         type: [
             `European Restaurant`,
             `Modern`
@@ -351,10 +335,7 @@ module.exports = [
         ],
         rating: 4.5
     },
-
     {
-
-
         city: `Dubai`,
         name: `Miss Tess`,
         address: `Taj Dubai - Burj Khalifa St - Business Bay - Dubai - United Arab Emirates`,
