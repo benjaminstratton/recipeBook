@@ -4,7 +4,7 @@ const Restaurant = require(`../models/restaurantSchema.js`)
 
 // INDEX
 router.get(`/`, (req, res) => {
-    Restaurant.find({ city: `New York` }, (err, nyRestaurants) => {
+    Restaurant.find({ city: `NY` }, (err, nyRestaurants) => {
         if (err) {
             console.log(err)
         }

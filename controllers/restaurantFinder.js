@@ -21,4 +21,23 @@ router.get(`/`, (req, res) => {
 
 })
 
+// NEW
+router.get(`/new`, (req, res) => {
+    res.render(`addNewRestaurant.ejs`)
+})
+
+// CREATE
+router.post(`/`, (req, res) => {
+    let city = req.body.city
+    Restaurant.create(req.body, (err, newRestaurant) => {
+        if (err) {
+            console.log(err)
+        }
+
+        res.redirect(`/restaurantfinder/${city}`)
+    })
+})
+
+
+
 module.exports = router
