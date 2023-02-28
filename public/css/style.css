@@ -144,9 +144,13 @@ header {
   margin: 7rem auto;
 }
 
-.form-bodies {
-  padding-top: 75px;
-  padding-bottom: 75px;
+.form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container-form {
+  padding: 5rem 0;
 }
 
 .card {
