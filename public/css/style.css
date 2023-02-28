@@ -144,7 +144,7 @@ header {
   margin: 7rem auto;
 }
 
-#form-bodies {
+.form-bodies {
   padding-top: 75px;
   padding-bottom: 75px;
 }
@@ -213,6 +213,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-shadow: 2px 2px black;
 }
 
 .action-group {
