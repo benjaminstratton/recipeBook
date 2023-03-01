@@ -37,7 +37,11 @@
             class="col-6 mx-auto d-flex justify-content-between align-items-center"
           >
             <h5>📍<%=restaurant.address%></h5>
-            <a href="<%=restaurant.website%>" target="_blank" rel="noopener noreferrer" class="btn btn-light"
+            <a
+              href="<%=restaurant.website%>"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-light"
               >Book Online</a
             >
           </div>
@@ -47,12 +51,12 @@
     <div class="container">
       <div class="action-group">
         <a
-          href="/restaurantfinder/<%=restaurant.city%>/<%=restaurant.id%>/edit"
+          href="/<%=restaurant.city%>/<%=restaurant.id%>/edit"
           class="btn btn-secondary"
           >Edit</a
         >
         <form
-          action="/restaurantfinder/<%=restaurant.city%>/<%=restaurant.id%>?_method=DELETE"
+          action="/<%=restaurant.city%>/<%=restaurant.id%>?_method=DELETE"
           method="POST"
         >
           <button type="submit" value="DELETE" class="btn btn-danger">

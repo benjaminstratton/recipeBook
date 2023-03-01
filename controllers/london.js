@@ -24,7 +24,7 @@ router.post(`/`, (req, res) => {
     let type = req.body.type
     req.body.type = type.split(`, `)
     Restaurant.create(req.body, () => {
-        res.redirect(`/restaurantfinder/london`)
+        res.redirect(`/london`)
     })
 })
 
@@ -60,7 +60,7 @@ router.put(`/:id`, (req, res) => {
         if (err) {
             console.log(err)
         }
-        res.redirect(`/restaurantfinder/london/${req.params.id}`)
+        res.redirect(`/london/${req.params.id}`)
     })
 })
 
@@ -70,7 +70,7 @@ router.delete(`/:id`, (req, res) => {
         if (err) {
             console.log(err)
         }
-        res.redirect(`/restaurantfinder/london`)
+        res.redirect(`/london`)
     })
 })
 

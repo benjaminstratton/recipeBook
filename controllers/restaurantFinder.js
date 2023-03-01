@@ -34,7 +34,7 @@ router.post(`/`, (req, res) => {
             console.log(err)
         }
 
-        res.redirect(`/restaurantfinder/${city}`)
+        res.redirect(`/${city}`)
     })
 })
 

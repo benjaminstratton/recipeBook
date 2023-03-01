@@ -4,7 +4,7 @@ const Restaurant = require(`../models/restaurantSchema.js`)
 
 // INDEX
 router.get(`/`, (req, res) => {
-    Restaurant.find({city: `Dubai`}, (err, dubaiRestaurants) => {
+    Restaurant.find({ city: `Dubai` }, (err, dubaiRestaurants) => {
         if (err) {
             console.log(err)
         }
@@ -24,7 +24,7 @@ router.post(`/`, (req, res) => {
     let type = req.body.type
     req.body.type = type.split(`, `)
     Restaurant.create(req.body, () => {
-        res.redirect(`/restaurantfinder/dubai`)
+        res.redirect(`/dubai`)
     })
 })
 
@@ -56,11 +56,11 @@ router.get(`/:id/edit`, (req, res) => {
 router.put(`/:id`, (req, res) => {
     let type = req.body.type
     req.body.type = type.split(`, `)
-    Restaurant.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedRestaurant) => {
+    Restaurant.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedRestaurant) => {
         if (err) {
             console.log(err)
         }
-        res.redirect(`/restaurantfinder/dubai/${req.params.id}`)
+        res.redirect(`/dubai/${req.params.id}`)
     })
 })
 
@@ -70,7 +70,7 @@ router.delete(`/:id`, (req, res) => {
         if (err) {
             console.log(err)
         }
-        res.redirect(`/restaurantfinder/dubai`)
+        res.redirect(`/dubai`)
     })
 })
 

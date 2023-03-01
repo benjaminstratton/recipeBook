@@ -41,14 +41,13 @@ router.get(`/:id/edit`, (req, res) => {
 
 // UPDATE
 router.put(`/:id`, (req, res) => {
-    if (req.body.type) {
-        req.body.type = type.split(`,`)
-    }
+    let type = req.body.type
+    req.body.type = type.split(`, `)
     Restaurant.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedRestaurant) => {
         if (err) {
             console.log(err)
         }
-        res.redirect(`/restaurantfinder/paris/${req.params.id}`)
+        res.redirect(`/paris/${req.params.id}`)
     })
 })
 
@@ -60,7 +59,7 @@ router.delete(`/:id`, (req, res) => {
     Restaurant.findByIdAndRemove(req.params.id, (err, data) => {
         if (err) {
             console.log(err)
-        } res.redirect(`/restaurantfinder/paris`)
+        } res.redirect(`/paris`)
     })
 
 })
