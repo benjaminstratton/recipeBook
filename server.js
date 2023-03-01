@@ -31,7 +31,7 @@ app.use('/paris', parisController)
 app.use('/', restaurantFinderController)
 app.use('/sydney', sydneyController)
 
-mongoose.connect(process.env.MONGODB, () => {
+mongoose.connect('mongodb+srv://admin:adminpassword@cluster0.jrgyfat.mongodb.net/restaurantfinder?retryWrites=true&w=majority', () => {
     console.log('The connection with mongodb is established');
 })
 
