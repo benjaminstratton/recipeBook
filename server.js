@@ -4,7 +4,7 @@ const mongoose = require(`mongoose`)
 const methodOverride = require(`method-override`)
 require(`dotenv`).config()
 
-app.get("/", (req,res) => res.redirect("/restaurantfinder"))
+
 
 // Controllers
 const dubaiController = require(`./controllers/dubai.js`)
