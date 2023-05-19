@@ -20,8 +20,6 @@ app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride(`_method`))
 app.use(express.static('public'))
 
-
-
 // Middleware for Controllers
 app.use('/dubai', dubaiController)
 app.use('/london', londonController)
